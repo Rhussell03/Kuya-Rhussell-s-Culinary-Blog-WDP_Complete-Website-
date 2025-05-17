@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuya Rhussell's Culinary Blog</title>
+  <style>
+    :root {
+      --black: #010006;
+      --gray: #002A12;
+      --white: #F1F2ED;
+      --light-green: #A2AC82;
+      ----dark-green: #022902;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0px;
+      background: #64846C;
+      color: var(--black);
+      overflow-y: auto;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    header {
+      background: var(--black);
+      padding: 20px;
+      margin: 0px;
+      text-align: center;
+      color: var(--white);
+      font-size: 24px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .box {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background: orange;
+      color: white;
+      margin: 1px;
+      padding: 10px 15px;
+      border: 5px solid #EFF6A9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      font-weight: bold;
+      z-index: 9999;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: var(--gray);
+      padding: 10px;
+      margin: 0px;
+      flex-wrap: wrap;
+      grid-template-columns: 1fr;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      padding: 5px 10px;
+      border: 1px solid transparent;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    main {
+      background: var(--white);
+      color: var(--black);
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    aside {
+      background: var(--white);
+      color: var(--black);
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    nav a:link {
+      color: white;
+    }
+
+    nav a:hover {
+      color: var(--black);
+    }
+
+    nav a:active {
+      color: yellow;
+    }
+
+    .explored-pink:link {
+      color: darkseagreen;
+    }
+
+    .explored-pink:visited {
+      color: gold;
+    }
+
+    .explored-pink:hover {
+      color: cyan;
+    }
+
+    .explored-pink:active {
+      text-decoration: none;
+      color: yellow;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .special-box {
+        top: 0px;
+        right: 5px;
+        font-size: 14px;
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kuya's Cooking Blog</h1>
+  </header>
+
+  <div class="box">
+    🍳 New Recipe added!
+  </div>
+
+  <nav>
+    <a href="Index.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact us</a>
+    <a href="#">Gallery</a>
+
+  <div class="container">
+    <main>
+      <h2>Kuya's Main Topic</h2>
+      <p>Welcome to my culinary blog where I share my best recipes and cooking tips.</p>
+      <a href="Index.html" class="explored-pink">Click here to explore!</a><br />
+      <a href="#" class="explored-pink">More News!</a>
+    </main>
+
+    <aside>
+      <h2>Kuya's Side Quest?</h2>
+      <p>Discover new cooking challenges and fun recipes!</p>
+      <a href="#" class="explored-pink">Click here</a><br />
+      <a href="#" class="explored-pink">Click here</a>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Kuya's Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
